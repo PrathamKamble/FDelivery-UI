@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    background: linear-gradient(45deg, rgba(249, 74, 61, 0.1) 60%, rgba(255, 229, 7, 0.1)) !important;
+    height: 100vh;
+  }
+
+/* navbar css */
+
+.navbar{
+    width: 100%;
+    height: 100px !important;
+}
+
+.nav-item > .nav-link{
+    color: #000;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.nav-link::after{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #f94a3d;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after{
+    transform: scaleX(1);
+}
+
+.search-box{
+    background-color: #fff;
+    padding: 0px 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    color: rgb(130, 130, 130);
+    box-shadow: none;
+}
+
+.search-box > .search{
+    border: none;
+    height: 45px;
+    outline: none;
+}
+
+.search-box > .search-icon{
+    color: #000;
+}
+
+.nav-btn{
+    color: #fff;
+    background-color: #f94a3d;
+}
+
+.nav-btn:hover{
+    color: #fff;
+    background: #fd4538;
+}
+
+.cart-icon {
+    justify-content: center;
+    color: #69697b;
+    font-size: 1.5vw;
+    margin-right: 1.5rem;
+    position: relative;
+}
+
+ .cart-icon > span {
+      position: absolute;
+      top: -0.5vw;
+      right: -1rem;
+      padding: 1px 8px;
+      color: #fff;
+      background-color: #F94A3D;
+      border-radius: 50%;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+
+/* main section */
+
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-left,
+.main-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-fries{
+    background-color: #ffd2d5;
+    width: 40%;
+    height: 46px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.main-fries > p{
+    color: #F94A3D;
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.main-fries > .fries{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.main-title > p:first-child{
+    color: #212244;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+}
+
+.main-title > p:first-child > span{
+    color: #F94A3D;
+}
+
+.main-title > p:nth-child(2){
+    color: #69697B;
+    font-size: 18px;
+    line-height: 32px;
+    width: 520px;
+    height: 96px;
+}
+
+.exp-btn{
+    color: #fff;
+    background-color: #f94a3d;
+    border-radius: 16px;
+}
+
+.exp-btn:hover{
+    color: #fff;
+    background: #fd4538;
+}
+
+/* about-us section css */
+
+#about{
+    width: 100%;
+    margin: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.abt-title > h2{
+    color: #212244;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.abt-title > p{
+    color:#69697B;
+    font-size: 18px;
+    line-height: 31px;
+}
+
+.cards{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(#ffffff, #ffffff) padding-box, 
+    linear-gradient(180deg, transparent 35%,#f3f2f2) border-box;
+    border: 5px solid transparent;
+    border-radius: 20px;
+}
+
+.cards:hover{
+    background:linear-gradient(#ffffff, #ffffff) padding-box, 
+    linear-gradient(180deg, transparent 35%,#FFCF03) border-box;
+}
+
+.my-card > h4{
+    color: #212244;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 40px;
+    padding: 25px;
+}
+
+/* Recipes section css */
+
+/* #recipes{
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+} */
+
+
+/* testimonials css */
+
+#testimonials{
+    background-color: #f8f8f8;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-list > .name-card:first-child{
+    background-color: #fff;
+}
+
+.name-card{
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.card-list > .name-card >.inner > h3{
+    color: #212244;
+    font-size: 25px;
+    line-height: 37.5px;
+}
+
+.inner > p{
+    color: #69697B;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* call to action section css */
+
+#call{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer css */
+
+#footer{
+    width: 100%;
+    height: 100%;
+    padding: 80px 0;
+    background-image: url(./images/mask.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.foot-logo{
+    margin-bottom: 30px;
+}
+
+.foot-para{
+    color: #69697B;
+    font-size: 16px;
+    line-height: 28px;
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+.fa-brands{
+    color: #252525;
+}
+
+.foot-title{
+    color: #2E2E2E;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: -1%;
+    margin-bottom: 30px;
+}
+
+.foot-list,.social-links{
+    list-style-type: none;
+}
+
+.foot-links{
+    color: #69697B;
+    font-size: 16px;
+    line-height: 35px;
+    text-decoration: none;
+}
